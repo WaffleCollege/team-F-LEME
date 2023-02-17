@@ -159,6 +159,18 @@ border-style:hidden;
 outline:none;
 }
 
+table{
+    margin: auto;
+}
+
+.stamp button{
+    background-color: transparent;
+    width:35px;
+    text-align: center;
+    border: none;
+    font-size: 20px; 
+}
+
 .stamp
 {
 color:#ffffff;
@@ -167,7 +179,7 @@ vertical-align:text-top;
 font-size:25px;
 left:27px;
 top:76px;
-width:280px;
+width:350px;
 height:27px;
 position:absolute;
 line-height:auto;
@@ -401,6 +413,14 @@ border-style:hidden;
 outline:none;
 }
 
+.stamp2 button{
+    background-color: transparent;
+    width:35px;
+    text-align: center;
+    border: none;
+    font-size: 20px; 
+}
+
 .stamp2
 {
 color:#ffffff;
@@ -409,7 +429,7 @@ vertical-align:text-top;
 font-size:25px;
 left:27px;
 top:55px;
-width:280px;
+width:350px;
 height:27px;
 position:absolute;
 line-height:auto;
