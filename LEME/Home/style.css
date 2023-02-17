@@ -1,87 +1,80 @@
-.home
-{
+* body{
 position:absolute;
 background-color:#66cc92;
 height:150%;
 width:100%;
 padding:0px;
+margin: 0px;
 }
-
 
 .header
 {
-background-color:#ffffff;
-opacity: 70%;
-height:75px;
-width:100%;
-padding:0px;
-border-style:hidden;
-outline:none;
-position:absolute;
-top:0px;
-left:0px;
+    display: flex;
+    background-color:#ffffff;
+    opacity: 80%;
+    height:75px;
+    width:100%;
+    padding:0px;
+    margin: 0px;
+    border-style:hidden;
+    outline:none;
+    position:absolute;
+    
 }
 
-.user
-{
-background-color:#ffffff;
-height:45px;
-width:45px;
-left:80%;
-top:7px;
-position:absolute;
+li {
+    list-style:none
 }
 
-.ユーザーネーム
-{
-color:#000000;
-text-align:left;
-vertical-align:text-top;
-font-size:18px;
-left:105px;
-top:22px;
-width:174px;
-height:30px;
-position:absolute;
-line-height:auto;
-border-style:hidden;
-outline:none;
+#LEMElogo {
+    height:83px;
+    width:159px;
+    left:37px;
+    top:7px;
+    position:absolute;
 }
 
-.icon
-{
-background-color:#000000;
-height:45px;
-width:45px;
-top:7px;
-left:50px;
-position:absolute;
-border-radius:50%;
+.search{
+    margin: auto 23px auto 73%;
+    position: sticky;
+    display: flex;
+    padding-left:0
 }
 
-.serch
-{
-background-color:#000000;
-height:41.5px;
-width:268px;
-left:854px;
-top:16px;
-position:absolute;
+#search-logo {
+    position: absolute;
+    margin: 7px;
+    margin-top: 14px;
 }
 
-.logo
-{
-height:83px;
-width:159px;
-left:37px;
-top:7px;
-position:absolute;
+#kensaku {
+    width: 250px;
+    height: 30px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: large;
+    padding-left: 33px;
+    border-radius: 10px;
+    border-color: gray;
+}
+
+.userLogo {
+    height: 50px;
+    width: 50px;
+    padding: 0%;
+    margin-right: 10px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
 }
 
 .today
 {
 background-color:#ffffff;
-height:455px;
+height: 413px;
 width:701px;
 padding:0px;
 left:153px;
@@ -105,6 +98,8 @@ height:242px;
 width:476px;
 left:27px;
 top:145px;
+border-radius:5px;
+border:0.2px solid #000000;
 position:absolute;
 }
 
@@ -123,6 +118,19 @@ line-height:auto;
 border-style:hidden;
 outline:none;
 }
+
+.textlines{
+    position: relative;
+    display: block;
+    width: 410px;
+    height: 180px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #113320;
+    outline: none;
+  }
 
 .当日画像
 {
@@ -260,32 +268,30 @@ height:14px;
 position:absolute;
 }
 
-.保存ボタン
-{
-background-color:#ffff00;
-height:34px;
-width:115px;
-border-radius:20px;
-top:421px;
+
+
+.btn {
+ background: #ffff00;
+ color: #000000;
+ width: 115px;
+ height: 34px;
+ border-radius: 20px;
+ text-align: center;
+ overflow: hidden;
+ padding: 0 20px;
+ top:421px;
 left:586px;
 position:absolute;
+font-size:15px;
+
+}
+ 
+.btn:hover {
+ opacity: 0.7;
 }
 
-.save
-{
-color:#113320;
-text-align:left;
-vertical-align:text-top;
-font-size:18px;
-left:624px;
-top:425px;
-width:40px;
-height:22px;
-position:absolute;
-line-height:auto;
-border-style:hidden;
-outline:none;
-}
+
+
 
 .past
 {
@@ -317,6 +323,7 @@ border:0.2px solid #000000;
 top:91px;
 left:27px;
 position:absolute;
+margin-top: 10px;
 }
 
 .本文3
@@ -341,7 +348,7 @@ background-color:rgba(217, 217, 217, 0.8);
 height:169px;
 width:168px;
 border-radius:5px;
-top:138px;
+top:150px;
 left:518px;
 position:absolute;
 }
@@ -353,7 +360,7 @@ text-align:left;
 vertical-align:text-top;
 font-size:18px;
 left:529px;
-top:146px;
+top:165px;
 width:57px;
 height:23px;
 position:absolute;
