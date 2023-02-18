@@ -171,21 +171,75 @@ table{
     font-size: 20px; 
 }
 
-.stamp
-{
-color:#ffffff;
-text-align:left;
-vertical-align:text-top;
-font-size:25px;
-left:27px;
-top:76px;
-width:350px;
-height:27px;
-position:absolute;
-line-height:auto;
-border-style:hidden;
-outline:none;
+.stamp_{
+    display: flex;
 }
+.stamp__{
+    display: flex;
+}
+
+.stamp_ label{
+    display: block;
+    width: 350px;
+    height:27px;
+    position:absolute;
+    line-height:auto;
+    outline:none;
+    background: #FFFFFF;
+    opacity: 0.5;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 10px;
+    font-size:25px;
+    left:27px;
+    top:76px;
+    box-sizing: border-box;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.stamp_ input:checked+label{
+    background: #FFFFFF;
+    color: #FFF;
+    opacity: 1;
+}
+.stamp_ input{
+    display: none;
+}
+
+.stamp__ label{
+    display: block;
+    width: 350px;
+    height:27px;
+    position:absolute;
+    line-height:auto;
+    outline:none;
+    background: #FFFFFF;
+    opacity: 0.5;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 10px;
+    font-size:25px;
+    left:27px;
+    top:76px;
+    box-sizing: border-box;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.stamp__ input:checked+label{
+    background: #FFFFFF;
+    color: #FFF;
+    opacity: 1;
+}
+.stamp__ input{
+    display: none;
+}
+
 
 .date
 {
