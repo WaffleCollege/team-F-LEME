@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+  }
+
 * body{
 position:absolute;
 background-color:#66cc92;
@@ -7,8 +11,8 @@ padding:0px;
 margin: 0px;
 }
 
-.header
-{
+.header{
+    z-index: 9999;
     display: flex;
     background-color:#ffffff;
     opacity: 80%;
@@ -18,8 +22,7 @@ margin: 0px;
     margin: 0px;
     border-style:hidden;
     outline:none;
-    position:absolute;
-    
+    position: fixed;
 }
 
 li {
@@ -527,3 +530,5 @@ outline:none;
     color: #113320;
     outline: none;
   }
+
+
