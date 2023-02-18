@@ -1,0 +1,529 @@
+* body{
+    position:absolute;
+    background-color:#66cc92;
+    height:150%;
+    width:100%;
+    padding:0px;
+    margin: 0px;
+    }
+    
+    .header
+    {
+        display: flex;
+        background-color:#ffffff;
+        opacity: 80%;
+        height:75px;
+        width:100%;
+        padding:0px;
+        margin: 0px;
+        border-style:hidden;
+        outline:none;
+        position:absolute;
+        
+    }
+    
+    li {
+        list-style:none
+    }
+    
+    #LEMElogo {
+        height:83px;
+        width:159px;
+        left:37px;
+        top:7px;
+        position:absolute;
+    }
+    
+    .search{
+        margin: auto 23px auto 73%;
+        position: sticky;
+        display: flex;
+        padding-left:0
+    }
+    
+    #search-logo {
+        position: absolute;
+        margin: 7px;
+        margin-top: 14px;
+    }
+    
+    #kensaku {
+        width: 250px;
+        height: 30px;
+        margin-top: 5px;
+        font-weight: bold;
+        font-size: large;
+        padding-left: 33px;
+        border-radius: 10px;
+        border-color: gray;
+    }
+    
+    .userLogo {
+        height: 50px;
+        width: 50px;
+        padding: 0%;
+        margin-right: 10px;
+    }
+    
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+    
+    .today
+    {
+    background-color:#ffffff;
+    height: 413px;
+    width:701px;
+    padding:0px;
+    left:153px;
+    top:163px;
+    position:absolute;
+    }
+    
+    .当日枠
+    {
+    background-color:#ffffff;
+    height:413px;
+    width:701px;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    border-radius:5px;
+    }
+    
+    .本文囲み
+    {
+    background-color:#ffffff;
+    height:242px;
+    width:476px;
+    left:27px;
+    top:145px;
+    border-radius:5px;
+    border:0.2px solid #000000;
+    position:absolute;
+    }
+    
+    .howwasyourday
+    {
+    color:#113320;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:18px;
+    left:56px;
+    top:164px;
+    width:200px;
+    height:24px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    }
+    
+    .textlines{
+        position: relative;
+        display: block;
+        width: 410px;
+        height: 180px;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        color: #113320;
+        outline: none;
+      }
+    
+    .当日画像
+    {
+    background-color:rgba(217, 217, 217, 0.800000011920929);
+    height:174px;
+    width:168px;
+    border-radius:5px;
+    top:213px;
+    left:518px;
+    position:absolute;
+    }
+    
+    .image
+    {
+    color:rgba(17, 51, 32, 0.699999988079071);
+    text-align:left;
+    vertical-align:text-top;
+    font-size:18px;
+    left:537px;
+    top:226px;
+    width:57px;
+    height:23px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    }
+    
+    .tension{
+        position:absolute;
+        display: flex;
+        left:27px;
+        top:76px;
+    }
+    .tension label{
+        display: block;
+        width: 350px;
+        height:45px;
+        width: 50px;
+        left:27px;
+        top:76px;
+        background: #ffffff;
+        color: RGBA(0,0,0,0.5);
+        padding: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+        text-align: left;
+        text-decoration: none;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    .tension input:checked+label{
+        background: #ffffff;
+        color: RGBA(0,0,0,1);
+        left:27px;
+        top:76px;
+    }
+    .tension input{
+        display: none;
+        left:27px;
+        top:76px;
+    }
+    
+    .weather {
+        position:absolute;
+        display: flex;
+        left:300px;
+        top:76px;
+    }
+    .weather  label{
+        display: block;
+        width: 350px;
+        height:45px;
+        width: 50px;
+        left:27px;
+        top:76px;
+        background: #ffffff;
+        color: RGBA(0,0,0,0.5);
+        padding: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+        text-align: left;
+        text-decoration: none;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    .weather  input:checked+label{
+        background: #ffffff;
+        color: RGBA(0,0,0,1);
+        left:27px;
+        top:76px;
+    }
+    .weather input{
+        display: none;
+        left:27px;
+        top:76px;
+    }
+    
+    
+    .date
+    {
+    color:#113320;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:25px;
+    left:27px;
+    top:31px;
+    width:250px;
+    height:31px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    }
+    
+    
+    .taghere
+    {
+    color:#113320;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:18px;
+    left:520px;
+    top:145px;
+    width:90px;
+    height:22px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    }
+    
+    .textlines2{
+        background-color:rgba(217, 217, 217, 0.8);
+        position: relative;
+        display: block;
+        width: 155px;
+        height: 27px;
+        padding: 6px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        color: #113320;
+        outline: none;
+      }
+    
+    .音声入力ボタン
+    {
+    background-color:#ffff00;
+    height:31px;
+    width:29px;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    border-radius:20px;
+    border:1px solid #ffff00;
+    top:164px;
+    left:456px;
+    position:absolute;
+    }
+    
+    .voice
+    {
+    width:16px;
+    height:21px;
+    left:462px;
+    top:169px;
+    position:absolute;
+    }
+    
+    .vector
+    {
+    background-color:#000000;
+    height:13.6px;
+    width:8.7px;
+    width:8.7px;
+    height:13.6px;
+    left:465.63px;
+    top:169px;
+    width:8.7px;
+    height:13.6px;
+    position:absolute;
+    }
+    
+    .vector2
+    {
+    background-color:#000000;
+    height:14px;
+    width:16px;
+    width:16px;
+    height:14px;
+    left:462px;
+    top:175.99px;
+    width:16px;
+    height:14px;
+    position:absolute;
+    }
+    
+    .btn {
+     background: #ffff00;
+     color: #000000;
+     width: 115px;
+     height: 34px;
+     border-radius: 20px;
+     text-align: center;
+     overflow: hidden;
+     padding: 0 20px;
+     top:421px;
+    left:586px;
+    position:absolute;
+    font-size:15px;
+    
+    }
+     
+    .btn:hover {
+     opacity: 0.7;
+    }
+    
+    .past
+    {
+    background-color:#ffffff;
+    height:337px;
+    width:701px;
+    padding:0px;
+    top:638px;
+    left:153px;
+    position:absolute;
+    }
+    
+    .過去枠
+    {
+    background-color:#ffffff;
+    height:337px;
+    width:701px;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    border-radius:5px;
+    }
+    
+    .本文囲み2
+    {
+    background-color:#ffffff;
+    height:216px;
+    width:476px;
+    border-radius:5px;
+    border:0.2px solid #000000;
+    top:91px;
+    left:27px;
+    position:absolute;
+    margin-top: 10px;
+    }
+    
+    .本文3
+    {
+    color:#113320;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:18px;
+    left:56px;
+    top:114px;
+    width:55px;
+    height:24px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    }
+    
+    .過去画像
+    {
+    background-color:rgba(217, 217, 217, 0.8);
+    height:169px;
+    width:168px;
+    border-radius:5px;
+    top:150px;
+    left:518px;
+    position:absolute;
+    }
+    
+    .image2
+    {
+    color:rgba(17, 51, 32, 0.699999988079071);
+    text-align:left;
+    vertical-align:text-top;
+    font-size:18px;
+    left:529px;
+    top:165px;
+    width:57px;
+    height:23px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    }
+    
+    .date2
+    {
+    color:#113320;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:25px;
+    left:37px;
+    top:22px;
+    width:121px;
+    height:21px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    }
+    
+    .tag
+    {
+    color:#000000;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:18px;
+    left:518px;
+    top:51px;
+    width:116px;
+    height:23px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    }
+    
+    .stamp2 button{
+        background-color: transparent;
+        width:35px;
+        text-align: center;
+        border: none;
+        font-size: 20px; 
+    }
+    
+    .stamp2
+    {
+    color:#ffffff;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:25px;
+    left:27px;
+    top:55px;
+    width:350px;
+    height:27px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    }
+    
+    .goal
+    {
+    background-color:#ffffff;
+    height:167px;
+    width:387px;
+    padding:0px;
+    top:163px;
+    left:916px;
+    position:absolute;
+    }
+    
+    .rectangle1
+    {
+    background-color:#ffffff;
+    height:167px;
+    width:387px;
+    border-radius:5px;
+    }
+    
+    .年目標
+    {
+    color:#113320;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:18px;
+    left:22px;
+    top:21px;
+    width:161px;
+    height:29px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    }
+    
+    .textlines3{
+        background-color: #FFFFFF;
+        position: relative;
+        display: block;
+        width: 320px;
+        height: 90px;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        color: #113320;
+        outline: none;
+      }

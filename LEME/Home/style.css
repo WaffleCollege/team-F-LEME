@@ -2,6 +2,26 @@ html{
     scroll-behavior: smooth;
   }
 
+.yuru-chara {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    margin-left: 82%;
+    margin-top: 48%;
+    margin-right: 10%;
+    position: fixed;
+}
+
+#LEMEpost {
+    margin-right: 5px;
+    border-radius: 0%;
+}
+
+#LEMEflower {
+    margin-right: 15px;
+    border-radius: 0%;
+}
+
 * body{
 position:absolute;
 background-color:#66cc92;
