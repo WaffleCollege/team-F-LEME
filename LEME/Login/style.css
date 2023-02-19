@@ -1,0 +1,177 @@
+html{
+    scroll-behavior: smooth;
+  }
+
+* body{
+position:absolute;
+background-color:#66cc92;
+height:100%;
+width:100%;
+padding:0px;
+margin: 0px;
+}
+
+.header{
+    z-index: 9999;
+    display: flex;
+    background-color:#ffffff;
+    opacity: 80%;
+    height: 70px;
+    width:100%;
+    padding:0px;
+    margin: 0px;
+    border-style:hidden;
+    outline:none;
+    position: fixed;
+}
+
+
+#LEMElogo {
+    height:83px;
+    width:159px;
+    left:37px;
+    top:7px;
+    position:absolute;
+}
+
+.main
+{
+position:absolute;
+background-color:#66cc92;
+height:1024px;
+width:1440px;
+padding:0px;
+}
+
+.logo
+{
+height:83px;
+width:159px;
+left:37px;
+top:7px;
+position:absolute;
+}
+.register
+{
+background-color:#ffffff;
+height:816px;
+width:1243px;
+padding:0px;
+left:130px;
+top:139px;
+position:absolute;
+}
+.rectangle8
+{
+background-color:#ffffff;
+height:816px;
+width:1243px;
+border-radius:5px;
+top:8px;
+left:0px;
+position:absolute;
+}
+
+.logo2 img{
+    height:83px;
+    width:159px;
+    left:543px;
+    top:84.22520446777344px;
+    position:absolute;
+}
+
+
+
+#mailaddress
+{
+    background-color:#ffffff;
+    height:40.47185134887695px;
+    width:307px;
+    border-radius:5px;
+    border:0.5px solid #113320;
+    top:421.12px;
+    left:465px;
+    text-align: left;
+    position:absolute;
+    }
+
+#password
+{
+    background-color:#ffffff;
+    height:40.47185134887695px;
+    width:307px;
+    border-radius:5px;
+    border:0.5px solid #113320;
+    top:504.25px;
+    left:465px;
+    text-align: left;
+    position:absolute;
+    }
+
+.loginbtn
+{
+    background-color:rgb(50, 153, 95);
+    color:#ffffff;
+    height:40px;
+    width:307px;
+    border-radius:5px;
+    border:0.5px solid #113320;
+    top:584.1px;
+    left:465px;
+    position:absolute;
+}
+
+.loginbtn:hover {
+    background-color: rgba(50, 153, 95,0.5);
+    color:#113320;
+  }
+
+.regbtn
+{
+background-color:#ffffff;
+height:40.47185134887695px;
+width:307px;
+border-radius:5px;
+border:0.5px solid #113320;
+top:251.58px;
+left:465px;
+position:absolute;
+}
+.regbtn:hover {
+    background-color: rgba(50, 153, 95,0.5);
+    color:#ffffff;
+  }
+
+.newUser
+{
+    color:#113320;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:14px;
+    font-family:Inter;
+    left:554px;
+    top:201.26px;
+    width:153px;
+    height:20.7828426361084px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+}
+
+.forgot
+{
+    color:#113320;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:13px;
+    font-family:Inter;
+    left:609px;
+    top:640.98px;
+    width:170px;
+    height:20.7828426361084px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    }
