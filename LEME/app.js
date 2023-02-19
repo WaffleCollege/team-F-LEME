@@ -1,8 +1,10 @@
-let express = require("express");
-let app = express();
+const express = require("express");
+const app = express();
+const port = 3000;
+
+app.use(express.static("Home"));
 
 
-
-app.listen(8080, () => {
+app.listen(port, () => {
     console.log("Start Server!");
 })
