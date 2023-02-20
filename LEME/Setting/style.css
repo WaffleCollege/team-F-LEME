@@ -1,0 +1,85 @@
+html{
+    scroll-behavior: smooth;
+  }
+
+* body{
+position:absolute;
+background-color:#66cc92;
+height:100%;
+width:100%;
+padding:0px;
+margin: 0px;
+}
+
+.header{
+    z-index: 9999;
+    display: flex;
+    background-color:#ffffff;
+    opacity: 80%;
+    height: 70px;
+    width:100%;
+    padding:0px;
+    margin: 0px;
+    border-style:hidden;
+    outline:none;
+    position: fixed;
+}
+
+li {
+    list-style:none
+}
+
+#LEMElogo {
+    height:83px;
+    width:159px;
+    left:37px;
+    top:7px;
+    position:absolute;
+}
+
+.search{
+    margin: auto 23px auto 73%;
+    position: sticky;
+    display: flex;
+    padding-left:0
+}
+
+#search-logo {
+    position: absolute;
+    margin: 7px;
+    margin-top: 14px;
+}
+
+#kensaku {
+    width: 250px;
+    height: 30px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: large;
+    padding-left: 33px;
+    border-radius: 10px;
+    border-color: gray;
+}
+
+.userLogo {
+    height: 50px;
+    width: 50px;
+    padding: 0%;
+    margin-right: 10px;
+}
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.frame{
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+    height: 550px;
+    margin: 0 auto 100px;
+    background: rgba(250, 255, 250,1);
+    left:0px;
+    top:140px;
+}
