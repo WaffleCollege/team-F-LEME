@@ -11,14 +11,6 @@ import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import { getAuth, signInwithEmailAndPassword } from "firebase/auth";
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyAMoXiHCRIkMWDw1nsYaiVDhJ1fhsVHowA",
-  authDomain: "leme-59360.firebaseapp.com",
-  projectId: "leme-59360",
-  storageBucket: "leme-59360.appspot.com",
-  messagingSenderId: "832193489953",
-  appId: "1:832193489953:web:cd404f8acae88f2829c760"
-};
 
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
