@@ -84,7 +84,7 @@ button {
   top: 0;
   width: 900px;
   height: 100%;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg");
+  background-image: url("https://i.ibb.co/vmKrGFc/login-backimage.png");
   background-size: cover;
   transition: transform 1.2s ease-in-out;
 }
@@ -116,7 +116,7 @@ button {
   font-weight: normal;
 }
 .img__text p {
-  font-size: 14px;
+  font-size: 11px;
   line-height: 1.5;
 }
 .cont.s--signup .img__text.m--up {
@@ -175,7 +175,7 @@ button {
 
 h2 {
   width: 100%;
-  font-size: 26px;
+  font-size: 20px;
   text-align: center;
 }
 
