@@ -28,12 +28,26 @@
                 </li>
               </ul>
             <ul class="userLogo">
-                <img src="https://i.ibb.co/tHxW9X8/IMG-1313.jpg" alt="icon">
+                <div class="conts-body">
+                    <button class="hamburger">
+                        <!--userlogo img-->
+                        <img class="hamburger_bar" src="https://i.ibb.co/tHxW9X8/IMG-1313.jpg">
+                    </button>
+                  
+                    <nav class="nav">
+                      <ul class="nav-list">
+                        <li class="nav-item"><a href="">SETTING</a></li>
+                        <li class="nav-item"><a href="">LOGOUT</a></li>
+                      </ul>
+                    </nav>
+                  </div>
             </ul>
             </div>
         </div>
         </header>
         <main>
+            
+
             <div class="content">
                 <div class="frame">
                     <div class="icon">
@@ -45,14 +59,61 @@
                     <div class="name">
                         <p> User Name</p>
                     </div>
-                    <button class="mail">メールアドレスの変更</button>
-                    <button class="PassWord">パスワードの変更</button>
+                    
+                    <!--
+                    <ul class="accordion-area">
+
+                        <li>li ~ /li までが一つのアコーディオン
+                        <section>
+                        <h3 class="title">メールアドレスの変更</h3>
+                        <div class="box">
+                            <input type="email" value="" placeholder="新しいメールアドレス"/>
+                        </div>
+                        </section>
+                        </li>
+                        <li>
+                            <section>
+                            <h3 class="title">パスワードの変更</h3>
+                            <div class="box">
+                                <input type="password"  value="" placeholder="新しいパスワード"/>
+                            </div>
+                            </section>
+                            </li>
+                        </ul >-->
+                    <div class="form">
+                        <div class="mail">
+                            <p class="bold">メールアドレスの変更</p>
+                            <p>現在のメールアドレス:</p>
+                            <div class="cp_iptxt">
+                            <p>変更後：
+                                    <label class="ef">
+                                    <input type="text" placeholder="新しいメールアドレス">
+                                    </label>
+                            </p>
+                                </div>
+                        </div>
+                        <div class="PassWord">
+                            <p class="bold">パスワードの変更</p>
+                            <div class="cp_iptxt2">
+                                <p>変更後:
+                                        <label class="ef">
+                                        <input type="text" placeholder="新しいパスワード">
+                                        </label>
+                                </p>
+                        </div>
+                        
+
+                    </div>
                     <div class="notice">
                         <p>通知</p>
                     </div>
                     <div class="toggle">
                         <input type="checkbox" name="check" />
                     </div>
+
+                <div class="submitbtn">
+                    <button type="button" class="submit">保存</button>
+                </div>
                 </div>
                 
             </div>
