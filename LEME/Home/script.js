@@ -1,4 +1,4 @@
-alert("Javascript読み込めました");
+// alert("Javascript読み込めました");
 
 "use strict";
 $(function () {
