@@ -1,9 +1,7 @@
+<label class="upload-label">
+    ファイルを選択
+    <input type="file" id="example" multiple>
+  </label>
 
-<!--multipart/form-data形式でPOSTする例-->
-
-<form method="POST" action="/upload" enctype="multipart/form-data">
-    <input type="text" name="message" value="Hello"/><br>
-    <input type="file" name="file" accept=".png, .jpg, .jpeg, .pdf, .doc"><br>
-    <input type="submit" value="SUBMIT"/>
-</form>  
-
+<!-- 👇ここにプレビュー画像を追加する -->
+<div id="preview"></div>

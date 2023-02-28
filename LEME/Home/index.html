@@ -29,7 +29,19 @@
                 </li>
               </ul>
             <ul class="userLogo">
-                <img src="https://i.ibb.co/tHxW9X8/IMG-1313.jpg" alt="icon">
+                <div class="conts-body">
+                    <button class="hamburger">
+                        <!--userlogo img-->
+                        <img class="hamburger_bar" src="https://i.ibb.co/tHxW9X8/IMG-1313.jpg">
+                    </button>
+                  
+                    <nav class="nav">
+                      <ul class="nav-list">
+                        <li class="nav-item"><a href="">SETTING</a></li>
+                        <li class="nav-item"><a href="">LOGOUT</a></li>
+                      </ul>
+                    </nav>
+                  </div>
             </ul>
             </div>
         </div>
@@ -53,12 +65,18 @@
          </div>
         
          <div id='当日画像' class='当日画像'>
+            <label class="upload-label">
+                Select image
+                <input type="file" id="example" multiple>
+            </label>
+            
          </div>
         
          <div id='image' class='image'>
-            image
+            <!-- 👇ここにプレビュー画像を追加する -->
+            <div id="preview"></div>
         </div>
-        
+
         <div class='tension'>
             <input type="radio" name="tension" value="happy" id="radio_1"><label for="radio_1">😊</label>
             <input type="radio" name="tension" value="good" id="radio_2"><label for="radio_2">🌝</label>
@@ -104,6 +122,19 @@
                     return Today;
                 }
                 </script>
+            </div>
+
+            <div class="stampadd">
+                <label>
+                    <select name="addstamp">
+                      <option>🎤</option>
+                      <option>🎥</option>
+                      <option>🎾</option>
+                      <option>🏊</option>
+                      <option>🏀</option>
+                      <option>⚾</option>
+                    </select>
+                  </label>
             </div>
 
             <div id='taghere' class='taghere'>
@@ -171,12 +202,17 @@
             </div>    
             </div>   
         </div> 
+<!-- <<<<<<< HEAD -->
         <div class="yuru-chara">
             <img id="LEMEpost" src="/Users/nanako/Documents/Waffle College/nakko/team-F/team-F-LEME/LEME/Home/picture/IMG_7764.PNG">
             <img id="LEMEflower" src="/Users/nanako/Documents/Waffle College/nakko/team-F/team-F-LEME/LEME/Home/picture/IMG_7766.PNG">
         </div>    
             
     </div>
+<!-- ======= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+<!-- >>>>>>> 8d9de7890344716ffef70f692d0a90a244925cb1 -->
 </body>
 </html>
 
