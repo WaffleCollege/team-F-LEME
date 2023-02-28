@@ -1,29 +1,74 @@
-function previewFile(file) {
-    // プレビュー画像を追加する要素
-    const preview = document.getElementById('preview');
-  
-    // FileReaderオブジェクトを作成
-    const reader = new FileReader();
-  
-    // ファイルが読み込まれたときに実行する
-    reader.onload = function (e) {
-      const imageUrl = e.target.result; // 画像のURLはevent.target.resultで呼び出せる
-      const img = document.createElement("img"); // img要素を作成
-      img.src = imageUrl; // 画像のURLをimg要素にセット
-      preview.appendChild(img); // #previewの中に追加
+const week = ["日", "月", "火", "水", "木", "金", "土"];
+const today = new Date();
+// 月末だとずれる可能性があるため、1日固定で取得
+var showDate = new Date(today.getFullYear(), today.getMonth(), 1);
+
+// 初期表示
+window.onload = function () {
+    showProcess(today, calendar);
+};
+// 前の月表示
+function prev(){
+    showDate.setMonth(showDate.getMonth() - 1);
+    showProcess(showDate);
+}
+
+// 次の月表示
+function next(){
+    showDate.setMonth(showDate.getMonth() + 1);
+    showProcess(showDate);
+}
+
+// カレンダー表示
+function showProcess(date) {
+    var year = date.getFullYear();
+    var month = date.getMonth();
+    document.querySelector('#header').innerHTML = year + "年 " + (month + 1) + "月";
+
+    var calendar = createProcess(year, month);
+    document.querySelector('#calendar').innerHTML = calendar;
+}
+
+// カレンダー作成
+function createProcess(year, month) {
+    // 曜日
+    var calendar = "<table><tr class='dayOfWeek'>";
+    for (var i = 0; i < week.length; i++) {
+        calendar += "<th>" + week[i] + "</th>";
     }
-  
-    // いざファイルを読み込む
-    reader.readAsDataURL(file);
-  }
-  
-  
-  // <input>でファイルが選択されたときの処理
-  const fileInput = document.getElementById('example');
-  const handleFileSelect = () => {
-    const files = fileInput.files;
-    for (let i = 0; i < files.length; i++) {
-      previewFile(files[i]);
+    calendar += "</tr>";
+
+    var count = 0;
+    var startDayOfWeek = new Date(year, month, 1).getDay();
+    var endDate = new Date(year, month + 1, 0).getDate();
+    var lastMonthEndDate = new Date(year, month, 0).getDate();
+    var row = Math.ceil((startDayOfWeek + endDate) / week.length);
+
+    // 1行ずつ設定
+    for (var i = 0; i < row; i++) {
+        calendar += "<tr>";
+        // 1colum単位で設定
+        for (var j = 0; j < week.length; j++) {
+            if (i == 0 && j < startDayOfWeek) {
+                // 1行目で1日まで先月の日付を設定
+                calendar += "<td class='disabled'>" + (lastMonthEndDate - startDayOfWeek + j + 1) + "</td>";
+            } else if (count >= endDate) {
+                // 最終行で最終日以降、翌月の日付を設定
+                count++;
+                calendar += "<td class='disabled'>" + (count - endDate) + "</td>";
+            } else {
+                // 当月の日付を曜日に照らし合わせて設定
+                count++;
+                if(year == today.getFullYear()
+                  && month == (today.getMonth())
+                  && count == today.getDate()){
+                    calendar += "<td class='today'>" + count + "</td>";
+                } else {
+                    calendar += "<td>" + count + "</td>";
+                }
+            }
+        }
+        calendar += "</tr>";
     }
-  }
-  fileInput.addEventListener('change', handleFileSelect);
+    return calendar;
+}

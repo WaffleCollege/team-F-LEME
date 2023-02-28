@@ -1,7 +1,25 @@
-<label class="upload-label">
-    ファイルを選択
-    <input type="file" id="example" multiple>
-  </label>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- xxxx年xx月を表示 -->
+    <h1 id="header"></h1>
 
-<!-- 👇ここにプレビュー画像を追加する -->
-<div id="preview"></div>
+    <!-- ボタンクリックで月移動 -->
+    <div id="next-prev-button">
+        <button id="prev" onclick="prev()">‹</button>
+        <button id="next" onclick="next()">›</button>
+    </div>
+
+    <!-- カレンダー -->
+    <div id="calendar"></div>
+</div>
+</body>
+</html>
