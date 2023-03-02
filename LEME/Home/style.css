@@ -2,6 +2,26 @@ html{
     scroll-behavior: smooth;
   }
 
+.yuru-chara {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    margin-left: 82%;
+    margin-top: 48%;
+    margin-right: 10%;
+    position: fixed;
+}
+
+#LEMEpost {
+    margin-right: 5px;
+    border-radius: 0%;
+}
+
+#LEMEflower {
+    margin-right: 15px;
+    border-radius: 0%;
+}
+
 * body{
 position:absolute;
 background-color:#66cc92;
@@ -208,6 +228,27 @@ left:518px;
 position:absolute;
 }
 
+.upload-label {
+  display: inline-block;
+  cursor: pointer; /* カーソルを指に */
+  margin: 0.5em 0.5em; /* まわりの余白 */
+  padding: .2em 0.5em; /* 文字まわりの余白 */
+  line-height: 1.4; /* 行間 */
+  background-color: white;
+  color: gray; /* 文字色 */
+  font-size: 1em; /* フォントサイズ */
+  border-radius: 30px; /* 角の丸み */
+  transition: 0.2s; /* ホバーをなめらかに */
+}
+/* ホバー時 */
+.upload-label:hover {
+  box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.2); /* 影を表示 */
+}
+/* inputは隠す */
+.upload-label input {
+  display: none;
+}
+
 .image
 {
 color:rgba(17, 51, 32, 0.699999988079071);
@@ -218,6 +259,7 @@ left:537px;
 top:226px;
 width:57px;
 height:23px;
+margin-bottom: 35px;
 position:absolute;
 line-height:auto;
 border-style:hidden;
@@ -334,6 +376,7 @@ outline:none;
     width: 155px;
     height: 27px;
     padding: 6px;
+    padding-left: 15px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
@@ -361,6 +404,12 @@ height:21px;
 left:462px;
 top:169px;
 position:absolute;
+}
+
+#preview img {
+  margin-top: 35px;
+  max-height: fit-content;
+  border-radius: 0%;
 }
 
 .vector
