@@ -7,3 +7,72 @@
   textarea{
     margin-top:50px;
   }
+
+  .kibun{
+  display: flex;
+  left:27px;
+  }
+
+  .kibun label{
+
+    height:45px;
+    width: 50px;
+    left:27px;
+    top:76px;
+    background: #ffffff;
+    color: RGBA(0,0,0,0.5);
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  input:checked + label{
+    background: #ffffff;
+    color: RGBA(0,0,0,1);
+    left:27px;
+    top:76px;
+}
+
+  .kibun input{
+    display: none;
+    left:27px;
+    top:76px;
+}
+
+  .tension{
+    position:absolute;
+    display: flex;
+    left:27px;
+    top:76px;
+}
+.tension label{
+    display: block;
+    height:45px;
+    width: 50px;
+    left:27px;
+    top:76px;
+    background: #ffffff;
+    color: RGBA(0,0,0,0.5);
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.tension input:checked+label{
+    background: #ffffff;
+    color: RGBA(0,0,0,1);
+    left:27px;
+    top:76px;
+}
+.tension input{
+    display: none;
+    left:27px;
+    top:76px;
+}
