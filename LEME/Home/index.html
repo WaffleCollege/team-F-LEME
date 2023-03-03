@@ -61,9 +61,9 @@
          AEBBcAAoILAAHBBYCA4AJAQHABICC4ABAQXAAICC4ABAQXAAKCCwABwQWAgOACQEBwASAguAAQEFwACAguAAQEFwACggsAAcEFgIDgAkBAcAEgILgAEBBcAAgILgAEBBcAAoILAAHBBYCA4AJAQHABICC4ABAQXAAICC4ABAQXAAKCCwABwQWAgOACQEBwASAguAAQEFwACAguAAQEFwACggsAAcEFgIDgAkBAcAEgILgAEBBcAAgILgAEBBcAAoILAAHBBYCA4AJAQHABICC4ABAQXAAICC4ABAQXAAKCCwABwQWAgOACQEBwASAguAAQEFwACAguAAQEFwACggsAAcEFgIDgAkBAcAEgILgAEBBcAAgILgAEBBcAAoILAAHBBYCA4AJAQHABICC4ABAQXAAICC4ABAQXAAKCCwABwQWAgOACQEBwASAguAAQEFwACAguAAQEFwACggsAAcEFgIDgAkBAcAEgILgAEBBcAAgILgAEBBcAAoILAAHBBYCA4AJAQHABICC4ABAQXAAICC4ABAQXAAKCCwABwQWAgOACQEBwASAguAAQEFwACAguAAQEFwACggsAAcEFgIDgAkBAcAEgILgAEBBcAAgILgAEBBcAAoILAAHBBYCA4AJAQHABICC4ABAQXAAICC4ABAQXAAKCCwABwQWAgOACQEBwASAguAAQEFwACCyWy+VxAADOavH29nYYAICzGcdxv9jv94/Ho0suAJzD3Ninp6ef47zZ7XbTer1+WK1WAwDwMebYHg6Hx81mM41/D7fb7df7+/svp9PpdgAA/tk8HzV/2c6vyNM07eez36idUnplmcRSAAAAAElFTkSuQmCC'/>
          </img>
          
-         <div id='howwasyourday' class='howwasyourday'>
+        <!-- <div id='howwasyourday' class='howwasyourday'>
             <textarea class="textlines" placeholder="今日何したの？"></textarea><br>
-         </div>
+         </div> -->
         
          <div id='当日画像' class='当日画像'>
             <label class="upload-label">
@@ -78,12 +78,47 @@
             <div id="preview"></div>
         </div>
 
-        <div class='tension'>
+        <!--<div class='tension'>
             <input type="radio" name="tension" value="happy" id="radio_1"><label for="radio_1">😊</label>
             <input type="radio" name="tension" value="good" id="radio_2"><label for="radio_2">🌝</label>
             <input type="radio" name="tension" value="cry" id="radio_3"><label for="radio_3">😢</label>
             <input type="radio" name="tension" value="bad" id="radio_4"><label for="radio_4">😨</label>
-        </div>
+        </div>-->
+
+        <div class="kibun">
+            <table>
+            <tr>
+            <td>
+            <!-- idがforと紐づいている、checkedを消すとテキストエリアが全部表示-->
+            <input type="radio" name="entryPlan" value="hoge1" onclick="entryChange1();" checked="checked" id="radio_1"/><label for="radio_1">😊</label>
+            <input type="radio" name="entryPlan" value="hoge2" onclick="entryChange1();" id="radio_2"/><label for="radio_2">🌝</label>
+            <input type="radio" name="entryPlan" value="hoge3" onclick="entryChange1();" id="radio_3"/><label for="radio_3">😢</label>
+            <input type="radio" name="entryPlan" value="hoge4" onclick="entryChange1();" id="radio_4"/><label for="radio_4">😨</label>
+            </td>
+            </tr>
+            
+            <!-- 表示非表示切り替え -->
+            <tr id="firstBox">
+            <td><textarea placeholder="今日何かいいことあった？"></textarea></td>
+            </tr>
+             
+            <!-- 表示非表示切り替え -->
+            <tr id="secondBox">
+            <td><textarea placeholder="今日何したの？"></textarea></td>
+            </tr>
+            
+            <!-- 表示非表示切り替え -->
+            <tr id="thirdBox">
+              <td><textarea placeholder="今日どうだった？"></textarea></td>
+              </tr>
+            
+              <!-- 表示非表示切り替え -->
+            <tr id="fourthBox">
+              <td><textarea placeholder="今日どこかいった？"></textarea></td>
+              </tr>
+            </table>
+            </form>
+             </div>
 
         <div class='weather'>
             <input type="radio" name="weather" value="hare" id="radio_5"><label for="radio_5">🌞</label>
@@ -142,11 +177,11 @@
                 <textarea class="textlines2" placeholder="Tag here"></textarea><br>
             </div>
             
-            <div id='音声入力ボタン' class='音声入力ボタン'>
-            </div>
+            <!-- <div id='音声入力ボタン' class='音声入力ボタン'>
+            </div> -->
             
-            <img id='voice' class='voice' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAVCAYAAABPPm7SAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADiSURBVHgBzVPBDcIwDDRM0BHMBt2AsEE3oCN0hI7CBh0hIyAmaDegG5SkuhDLCk0jeGDJimXf2ZfIIUqbcW6dP50viGvaaY0gdfARuWuOXAE8JGoDFFW0Y3pKrkGtkcljQgFhkrZJYZINiu0nDfy9eiq33nP/4wozxZedcJ4SWKMwFbjrxlkB9LFfJha5GrlR5O6BF5bHoMAUV9cCuKimgdMexFRfvAiJrfMz4ofzGyQzRcXvq7KQuPXrjMCxLrKS3oHQILaixhtDVukBLN2iVmThpT9+4dwizeosbpC1rxu8AJsRQrPDL/hbAAAAAElFTkSuQmCC'/>
-            </img>
+            <!-- <img id='voice' class='voice' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAVCAYAAABPPm7SAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADiSURBVHgBzVPBDcIwDDRM0BHMBt2AsEE3oCN0hI7CBh0hIyAmaDegG5SkuhDLCk0jeGDJimXf2ZfIIUqbcW6dP50viGvaaY0gdfARuWuOXAE8JGoDFFW0Y3pKrkGtkcljQgFhkrZJYZINiu0nDfy9eiq33nP/4wozxZedcJ4SWKMwFbjrxlkB9LFfJha5GrlR5O6BF5bHoMAUV9cCuKimgdMexFRfvAiJrfMz4ofzGyQzRcXvq7KQuPXrjMCxLrKS3oHQILaixhtDVukBLN2iVmThpT9+4dwizeosbpC1rxu8AJsRQrPDL/hbAAAAAElFTkSuQmCC'/>
+            </img> -->
             <div id='保存ボタン' class='保存ボタン'>
                 <button type="button" class="btn">保存</button>
             </div>
@@ -201,13 +236,15 @@
             </div>
             </div>
             </div>    
-            </div>   
+            </div> 
+            <div class="calender"><iframe width="1400" height="800" src="./calender/calender.html"></iframe> </div>
         </div> 
 
 <!-- ======= -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
 <!-- >>>>>>> 8d9de7890344716ffef70f692d0a90a244925cb1 -->
+
 
 
 </body>
