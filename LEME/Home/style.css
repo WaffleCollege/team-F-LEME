@@ -131,6 +131,10 @@ li {
     flex-direction: column;
     gap: 40px;
   }
+
+  iframe {
+    border: none;
+  }
   
   /* リセットCSS */
   .header button {
@@ -753,6 +757,13 @@ option{
 option:hover{
   background-color:white;
   border-left:3px solid #f3a1a1;
-
 }
 
+<<<<<<< HEAD
+.calender {
+  
+}
+=======
+}
+
+>>>>>>> 6cdfc385f6272281875c6ef9eed33f3be3bbdb62

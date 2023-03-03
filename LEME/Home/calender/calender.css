@@ -2,9 +2,12 @@
 
 /*全体*/
 .wrapper{
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 367px;
+    margin-top: 300px;
+    margin-left: 905px;
     color: #666;
+    background-color: white;
+    padding: 10px;
 }
 #header {
     text-align: center;
