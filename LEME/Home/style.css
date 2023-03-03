@@ -131,6 +131,10 @@ li {
     flex-direction: column;
     gap: 40px;
   }
+
+  iframe {
+    border: none;
+  }
   
   /* リセットCSS */
   .header button {
