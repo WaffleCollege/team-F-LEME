@@ -167,6 +167,10 @@ top:115px;
 position:absolute;
 }
 
+.taghere textarea{
+  width:145px;
+}
+
 .当日枠
 {
 background-color:#ffffff;
