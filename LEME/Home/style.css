@@ -171,6 +171,10 @@ top:115px;
 position:absolute;
 }
 
+.taghere textarea{
+  width:145px;
+}
+
 .当日枠
 {
 background-color:#ffffff;
@@ -192,7 +196,7 @@ border:0.2px solid #000000;
 position:absolute;
 }
 
-.howwasyourday
+/*.howwasyourday
 {
 color:#113320;
 text-align:left;
@@ -220,7 +224,7 @@ outline:none;
     color: #113320;
     outline: none;
   }
-
+*/
 .当日画像
 {
 background-color:rgba(217, 217, 217, 0.800000011920929);
@@ -270,11 +274,61 @@ border-style:hidden;
 outline:none;
 }
 
-.tension{
+table{  
+  border:none;
+}
+
+.kibun textarea{
+  position: relative;
+    display: block;
+    width: 440px;
+    height: 180px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #113320;
+    outline: none;
+    top:30px;
+}
+
+.kibun{
+  position:absolute;
+  left:27px;
+  top:92px;
+  }
+
+  .kibun label{
+    height:45px;
+    width: 50px;
+    left:27px;
+    top:76px;
+    background: #ffffff;
+    color: RGBA(0,0,0,0.5);
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  input:checked + label{
+    background: #ffffff;
+    color: RGBA(0,0,0,1);
+  }
+
+  .kibun input{
+    display: none;
+}
+
+
+/*.tension{
     position:absolute;
     display: flex;
     left:27px;
-    top:76px;
+    
 }
 .tension label{
     display: block;
@@ -303,6 +357,7 @@ outline:none;
     left:27px;
     top:76px;
 }
+*/
 
 .weather {
     position:absolute;
@@ -704,6 +759,11 @@ option:hover{
   border-left:3px solid #f3a1a1;
 }
 
+<<<<<<< HEAD
 .calender {
   
 }
+=======
+}
+
+>>>>>>> 6cdfc385f6272281875c6ef9eed33f3be3bbdb62
