@@ -233,6 +233,7 @@ border-radius:5px;
 top:213px;
 left:518px;
 position:absolute;
+background-color: lightgray;
 }
 
 .upload-label {
@@ -465,8 +466,10 @@ position:absolute;
 }
 
 #preview img {
-  margin-top: 35px;
-  max-height: fit-content;
+  margin-top: 30px;
+  margin-left: 0%;
+  height: 100px;
+  width: fit-content;
   border-radius: 0%;
 }
 
