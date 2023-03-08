@@ -432,3 +432,14 @@ transform: rotate(-45deg);
 	border-bottom: 2px solid #da3c41;
 	outline: none;
 }
+
+@media(min-width:751px){
+  .sp{
+      display: none !important;
+  }
+}
+@media(max-width:750px){
+  .pc{
+      display: none !important;
+  }
+}

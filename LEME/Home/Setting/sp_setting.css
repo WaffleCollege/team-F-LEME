@@ -1,0 +1,49 @@
+@media screen and (max-width:480px) {
+
+  #LEMElogo{
+    width: 30%;
+    height: 80%;
+    top: 15px;
+  }
+  .search-logo{
+    display: none;
+  }
+  #kensaku{
+    display: none;
+  }
+  .bi{
+    display: none;
+  }
+  .frame{
+    width:100%;
+    top:90px;
+  }
+.icon img{
+  left: 20px;
+}
+.username {
+  left:180px;
+}
+.mail{
+  left:120px;
+  top: 150px;
+}
+
+.PassWord{
+  left: 120px;
+  top:320px;
+}
+.notice{
+  left:120px;
+  top:430px;
+}
+.toggle{
+  left: 120px;
+  top:405px;
+}
+.submitbtn button{
+  left: 120px;
+  top:450px;
+  width: 150px;
+}
+  }
