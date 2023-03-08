@@ -5,11 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href=".\smartphone.css" medi="screen and (max-width:480px)">
   <title>LEME</title>
 </head>
 
 
 <body>
+    <div class="wrap">
     <header>
         <div class="header">
             
@@ -50,8 +52,10 @@
               </div>
               <nav>
                 <ul>
+                  <li class="sp"><button onclick="location.href='./sp.html'">CALENDEER</button></li>
                   <li ><button onclick="location.href='./Setting/Setting.html'">SETTING</button></li>
-                  <li><button onclick="location.href='./Login2/Sign.html'">LOGOUT</button></li>
+                  <li class="pc"><button onclick="location.href='./Login2/Sign.html'">LOGOUT</button></li>
+                  <li class="sp"><button onclick="location.href='./Login/index.html'">LOGOUT</button></li>
                 </ul>
               </nav>
               <div class="overlay"></div>
@@ -257,7 +261,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
 <!-- >>>>>>> 8d9de7890344716ffef70f692d0a90a244925cb1 -->
-
+</div> 
 
 
 </body>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href=".\sp_setting.css" medi="screen and (max-width:480px)">
     
     <title>Setting</title>
 </head>
@@ -33,7 +34,9 @@
                   <nav>
                     <ul>
                       <li ><button onclick="location.href='../index.html'">HOME</button></li>
-                      <li><button onclick="location.href='../Login2/Sign.html'">LOGOUT</button></li>
+                      <li class="sp"><button onclick="location.href='./sp.html'">CALENDEER</button></li>
+                      <li class="pc"><button onclick="location.href='../Login2/Sign.html'">LOGOUT</button></li>
+                      <li class="sp"><button onclick="location.href='../Login/index.html'">LOGOUT</button></li>
                     </ul>
                   </nav>
                   <div class="overlay"></div>
@@ -52,9 +55,7 @@
                     <div class="username">
                         <p> User Name</p>
                     </div>
-                    <div class="name">
-                        <p> User Name</p>
-                    </div>
+                
                     
                     <!--
                     <ul class="accordion-area">
@@ -79,9 +80,9 @@
                     <div class="form">
                         <div class="mail">
                             <p class="bold">メールアドレスの変更</p>
-                            <p>現在のメールアドレス:</p>
+                            <p>現在のメールアドレス:<br>aaa@gmail.com</p>
                             <div class="cp_iptxt">
-                            <p>変更後：
+                            <p>
                                     <label class="ef">
                                     <input type="text" placeholder="新しいメールアドレス">
                                     </label>
@@ -91,7 +92,7 @@
                         <div class="PassWord">
                             <p class="bold">パスワードの変更</p>
                             <div class="cp_iptxt2">
-                                <p>変更後:
+                                <p>
                                         <label class="ef">
                                         <input type="text" placeholder="新しいパスワード">
                                         </label>
