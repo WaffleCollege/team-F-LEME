@@ -180,10 +180,10 @@ iframe{
 .goal
 {
 background-color:#ffffff;
-height:157px;
+height:130px;
 width:100%;
 padding:0px;
-top:500px;
+top:520px;
 left:0px;
 position:absolute;
 }
@@ -191,12 +191,12 @@ position:absolute;
 .rectangle1
 {
 background-color:#ffffff;
-height:157px;
+height:130px;
 width:100%;
 border-radius:5px;
 }
 
-.年目標
+.yeargoal
 {
 color:#113320;
 text-align:left;
@@ -212,12 +212,12 @@ border-style:hidden;
 outline:none;
 }
 
-.textlines3{
+.yearcontent{
     background-color: #FFFFFF;
     position: relative;
     display: block;
     width: 320px;
-    height: 90px;
+    height: 70px;
     padding: 12px;
     border: none;
     border-radius: 5px;
