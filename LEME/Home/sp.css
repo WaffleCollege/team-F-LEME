@@ -35,12 +35,12 @@
       top: 90px;
     }
 
-    .当日枠{
+    .todayframe{
       height: 280px;
       width: 100%;
     }
 
-    .本文囲み
+    .todayenclosure
     {
       height: 130px;
       width: 86%;
@@ -108,12 +108,12 @@
       top: 445px;
       left: 0px;
     }
-    .過去枠
+    .pastframe
     {
       height: 220px;
       width: 100%;
     }
-    .本文囲み2
+    .pastenclosure
     {
       background-color: #ffffff;
       height: 120px;
@@ -154,7 +154,7 @@
     border-style:hidden;
     outline:none;
     }
-    .過去画像
+    .pastimage
     {
       width: 30%;
     height: 110px;
@@ -172,9 +172,9 @@
     .button{
       font-size: 15px;
     }
-.当日画像{
+.todayimage{
   left: 20px;
-  top: 280px;
+  top: 285px;
   background-color: rgba(0, 0, 0, 0);
 }
 #preview img {

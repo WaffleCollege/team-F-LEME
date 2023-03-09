@@ -299,7 +299,7 @@ border-radius: 50%;
   height: 40px;
 }
 
-.当日枠
+.todayframe
 {
 background-color:#ffffff;
 height: 335px;
@@ -308,7 +308,7 @@ filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
 border-radius:5px;
 }
 
-.本文囲み
+.todayenclosure
 {
   background-color: #ffffff;
   height: 170px;
@@ -349,7 +349,7 @@ outline:none;
     outline: none;
   }
 */
-.当日画像
+.todayimage
 {
   height: 135px;
   width: 168px;
@@ -656,7 +656,7 @@ position:absolute;
   position: absolute;
 }
 
-.過去枠
+.pastframe
 {
   background-color: #ffffff;
   height: 280px;
@@ -666,7 +666,7 @@ position:absolute;
 }
 
 
-.本文囲み2
+.pastenclosure
 {
   background-color: #ffffff;
   height: 150px;
@@ -695,7 +695,7 @@ position:absolute;
   outline: none;
 }
 
-.過去画像
+.pastimage
 {
   background-color: rgba(217, 217, 217, 0.8);
   height: 150px;
@@ -797,7 +797,7 @@ position:absolute;
   border-radius: 5px;
 }
 
-.年目標
+.yeargoal
 {
   color: #113320;
   text-align: left;
@@ -813,7 +813,7 @@ position:absolute;
   outline: none;
 }
 
-.textlines3{
+.yearcontent{
   background-color: #FFFFFF;
   position: relative;
   display: block;
