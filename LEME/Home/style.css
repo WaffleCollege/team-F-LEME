@@ -320,35 +320,6 @@ border-radius:5px;
   position: absolute;
 }
 
-/*.howwasyourday
-{
-color:#113320;
-text-align:left;
-vertical-align:text-top;
-font-size:18px;
-left:56px;
-top:164px;
-width:200px;
-height:24px;
-position:absolute;
-line-height:auto;
-border-style:hidden;
-outline:none;
-}
-
-.textlines{
-    position: relative;
-    display: block;
-    width: 410px;
-    height: 150px;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    color: #113320;
-    outline: none;
-  }
-*/
 .todayimage
 {
   height: 135px;
@@ -357,17 +328,17 @@ outline:none;
   top: 190px;
   left: 518px;
   position: absolute;
-  background-color: lightgray;
+  /* background-color: lightgray; */
 }
 
 .upload-label {
   display: inline-block;
   cursor: pointer; /* カーソルを指に */
-  margin: 0.5em 0.5em; /* まわりの余白 */
-  padding: .2em 0.5em; /* 文字まわりの余白 */
+  margin: 0.3em 0.5em; /* まわりの余白 */
+  padding: .1em 0.5em; /* 文字まわりの余白 */
   line-height: 1.4; /* 行間 */
-  background-color: white;
-  color: gray; /* 文字色 */
+  background-color: lightgray;
+  color: white; /* 文字色 */
   font-size: 1em; /* フォントサイズ */
   border-radius: 30px; /* 角の丸み */
   transition: 0.2s; /* ホバーをなめらかに */
@@ -446,42 +417,6 @@ table{
   .kibun input{
     display: none;
 }
-
-
-/*.tension{
-    position:absolute;
-    display: flex;
-    left:27px;
-    
-}
-.tension label{
-    display: block;
-    height:45px;
-    width: 50px;
-    left:27px;
-    top:76px;
-    background: #ffffff;
-    color: RGBA(0,0,0,0.5);
-    padding: 10px;
-    margin: 10px;
-    box-sizing: border-box;
-    text-align: left;
-    text-decoration: none;
-    border-radius: 30px;
-    cursor: pointer;
-}
-.tension input:checked+label{
-    background: #ffffff;
-    color: RGBA(0,0,0,1);
-    left:27px;
-    top:76px;
-}
-.tension input{
-    display: none;
-    left:27px;
-    top:76px;
-}
-*/
 
 .weather {
   position: absolute;
