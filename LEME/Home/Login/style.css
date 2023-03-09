@@ -31,7 +31,7 @@ position:absolute;
 .register
 {
 background-color:#ffffff;
-height:100%;
+height:600px;
 width:100%;
 padding:0px;
 left:0px;
@@ -144,7 +144,7 @@ position:absolute;
     font-size:13px;
     font-family:Inter;
     left:105px;
-    top:580px;
+    top:570px;
     width:170px;
     height:20.7828426361084px;
     position:absolute;
