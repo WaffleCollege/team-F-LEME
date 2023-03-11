@@ -6,21 +6,21 @@ ellement = document.querySelector('.img__btn').addEventListener('click', functio
     document.querySelector('.cont').classList.toggle('s--signup');
   });
 
-const signUpbtn = document.getElementById("signUp");
-signUpbtn.addEventListener('click', function(e) {
+// const signUpbtn = document.getElementById("signUp");
+// signUpbtn.addEventListener('click', function(e) {
 
 
-    // メールアドレス・パスワードを取得
-    const email = document.getElementById('signUpmail').value;
-    const password = document.getElementById('signUppass').value;
+//     // メールアドレス・パスワードを取得
+//     const email = document.getElementById('signUpmail').value;
+//     const password = document.getElementById('signUppass').value;
 
-    console.log(signUpmail.value);
+//     console.log(signUpmail.value);
     
-    // 新規ユーザーを登録
-    firebase.auth().createUserWithEmailAndPassword(email, password)
+//     // 新規ユーザーを登録
+//     firebase.auth().createUserWithEmailAndPassword(email, password)
 
 
-});
+// });
 
 
 //   const signInbtn = document.getElementById("signIn");
