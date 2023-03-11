@@ -22,3 +22,5 @@ const auth = getAuth();
 firebase.initializeApp(config);
 
 export { getAuth };
+
+//廃棄
