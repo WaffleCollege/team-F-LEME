@@ -1,20 +1,20 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
+import { initializeApp } from "/Users/nanako/Documents/Waffle College/nakko/team-F/team-F-LEME/LEME/node_modules/firebase/compat/app/dist/index.cjs.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAMoXiHCRIkMWDw1nsYaiVDhJ1fhsVHowA",
-  authDomain: "leme-59360.firebaseapp.com",
-  projectId: "leme-59360",
-  storageBucket: "leme-59360.appspot.com",
-  messagingSenderId: "832193489953",
-  appId: "1:832193489953:web:cd404f8acae88f2829c760"
+  apiKey: "AIzaSyCD-E4VjfdKF6s5m1K5sjZoC3VrduOQ3uc",
+  authDomain: "leme-b7fd5.firebaseapp.com",
+  projectId: "leme-b7fd5",
+  storageBucket: "leme-b7fd5.appspot.com",
+  messagingSenderId: "999397436421",
+  appId: "1:999397436421:web:5e5940a9221573b8d6c06c"
 };
 
 // Initialize Firebase
-const getAuth = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
@@ -22,3 +22,51 @@ const auth = getAuth();
 firebase.initializeApp(config);
 
 export { getAuth };
+
+
+//新規登録処理
+function signInClick(){
+  alert('signInされました。');
+}
+function signUpClick(){
+  document.getElementById("signIn").click();
+}
+const botan = document.getElementById("signUp");
+botan.addEventListener("click", () => {
+  alert ("yei");
+});
+
+// const signUpbotton = document.getElementById('signUp');
+// signUpbotton.addEventListener('click', console.log("hello")); {
+  // console.log("hello");
+  // const mailAddress = document.getElementById('signUpmail').value;
+  // const password = document.getElementById('signInpass').value;
+
+  // firebase.auth().createUserWithEmailAndPassword(mailAddress, password)
+  // alert('done')
+  // .catch(function(error) {
+  //   alert('登録できません（' + error.message + '）');
+  // });
+  
+// });
+
+//ログイン処理
+login.addEventListener('click', function(e) {
+  const mailAddress = document.getElementById('signInmail').value;
+  const password = document.getElementById('signUppass').value;
+  
+  firebase.auth().signInWithEmailAndPassword(mailAddress, password)
+  .catch(function(error) {
+    alert('ログインできません（' + error.message + '）');
+  });
+});
+
+//認証状態の確認
+firebase.auth().onAuthStateChanged(function(user) {
+  if(user) {
+    //ログイン状態
+    alert("ログインに成功しました");
+  }else{
+    //ログアウト状態
+  }
+});
