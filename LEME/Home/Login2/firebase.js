@@ -18,23 +18,38 @@ const app = initializeApp(firebaseConfig);
 
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
+
+//新規登録　sign in
+
 const auth = getAuth();
-firebase.initializeApp(config);
+const email = document.getElementById("signUpmail");
+const password = document.getElementById("signUppass");
 
-export { getAuth };
+createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in
+    const user = userCredential.user;
+
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });
 
 
-//新規登録処理
-function signInClick(){
-  alert('signInされました。');
-}
-function signUpClick(){
-  document.getElementById("signIn").click();
-}
-const botan = document.getElementById("signUp");
-botan.addEventListener("click", () => {
-  alert ("yei");
-});
+// //新規登録処理
+// function signInClick(){
+//   alert('signInされました。');
+// }
+// function signUpClick(){
+//   document.getElementById("signIn").click();
+// }
+// const botan = document.getElementById("signUp");
+// botan.addEventListener("click", () => {
+//   alert ("yei");
+// });
 
 // const signUpbotton = document.getElementById('signUp');
 // signUpbotton.addEventListener('click', console.log("hello")); {
