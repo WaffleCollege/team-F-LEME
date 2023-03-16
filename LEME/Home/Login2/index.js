@@ -6,6 +6,12 @@ ellement = document.querySelector('.img__btn').addEventListener('click', functio
     document.querySelector('.cont').classList.toggle('s--signup');
   });
 
+const btn = document.getElementById("signUp");
+
+btn.addEventListener("click", function(){
+  window.location.href = "../index.html";
+});
+
 // const signUpbtn = document.getElementById("signUp");
 // signUpbtn.addEventListener('click', function(e) {
 

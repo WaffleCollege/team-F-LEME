@@ -46,4 +46,12 @@
   top:450px;
   width: 150px;
 }
+.cp_iptxt input[type='text'] {
+  font: 13px sans-serif;
+  width: 200px;
+}
+.cp_iptxt2 input[type='text'] {
+  font: 13px sans-serif;
+  width: 200px;
+}
   }

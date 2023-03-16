@@ -8,22 +8,22 @@
       height: 80%;
       top: 15px;
     }
-    .search{
+    .search2{
       margin: 0;
       position: sticky;
       display: flex;
       padding-left: 0;
     }
-    #search-logo {
+    #search-logo2 {
       position: relative;
       margin:  7px;
-      margin-top: 385px;
+      margin-top: 15px;
       margin-left: 10px;
   }
-  #kensaku {
+  #kensaku2 {
     width: 170px;
     height: 30px;
-    margin-top: 382px;
+    margin-top: 12px;
     font-weight: bold;
     font-size: 16px;
     padding-left: 20px;
@@ -394,5 +394,11 @@ table {
   height: 80px;
   width: fit-content;
   border-radius: 0%;
+}
+#kensaku{
+  display: none;
+}
+#search-logo{
+  display: none;
 }
   }
