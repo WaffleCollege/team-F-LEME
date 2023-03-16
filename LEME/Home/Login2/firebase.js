@@ -25,12 +25,12 @@ export { getAuth };
 
 //新規登録処理
 const signUpbotton = document.getElementById('signUp');
-signUp.addEventListener('click', function(e) {
+signUpbotton.addEventListener('click', function() {
   const mailAddress = document.getElementById('signUpmail').value;
   const password = document.getElementById('signInpass').value;
 
   firebase.auth().createUserWithEmailAndPassword(mailAddress, password)
-  alert('done')
+  console.log("nice")
   .catch(function(error) {
     alert('登録できません（' + error.message + '）');
   });
