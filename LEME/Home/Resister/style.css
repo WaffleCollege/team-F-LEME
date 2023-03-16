@@ -4,7 +4,7 @@ html{
 
 * body{
 position:absolute;
-background-color:#66cc92;
+background-color:#ffffff;
 height:100%;
 width:100%;
 padding:0px;
@@ -14,7 +14,7 @@ margin: 0px;
 .main
 {
 position:absolute;
-background-color:#66cc92;
+background-color:#ffffff;
 height:100%;
 width:100%;
 padding:0px;
@@ -52,12 +52,9 @@ position:absolute;
 .logo2 img{
     height:83px;
     width:159px;
-    left:105px;
-    top:84.22520446777344px;
+    left:125px;
     position:absolute;
 }
-
-
 
 #mailaddress
 {
@@ -66,8 +63,8 @@ position:absolute;
     width:307px;
     border-radius:5px;
     border:0.5px solid #113320;
-    top:380px;
-    left:30px;
+    top:280px;
+    left:50px;
     text-align: left;
     position:absolute;
     }
@@ -79,8 +76,8 @@ position:absolute;
     width:307px;
     border-radius:5px;
     border:0.5px solid #113320;
-    top:445px;
-    left:30px;
+    top:345px;
+    left:50px;
     text-align: left;
     position:absolute;
     }
@@ -93,8 +90,8 @@ position:absolute;
     width:307px;
     border-radius:5px;
     border:0.5px solid #113320;
-    top:520px;
-    left:30px;
+    top:420px;
+    left:50px;
     position:absolute;
 }
 
@@ -110,8 +107,8 @@ height:40.47185134887695px;
 width:307px;
 border-radius:5px;
 border:0.5px solid #113320;
-top:251.58px;
-left:30px;
+top:151.58px;
+left:50px;
 position:absolute;
 }
 .regbtn:hover {
@@ -126,8 +123,8 @@ position:absolute;
     vertical-align:text-top;
     font-size:14px;
     font-family:Inter;
-    left:105px;
-    top:201.26px;
+    left:125px;
+    top:101.26px;
     width:153px;
     height:20.7828426361084px;
     position:absolute;
