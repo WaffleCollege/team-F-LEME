@@ -191,7 +191,26 @@ label span {
   text-transform: uppercase;
 }
 
-input {
+.username{
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.email {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.pass{
   display: block;
   width: 100%;
   margin-top: 5px;
@@ -208,13 +227,37 @@ input {
   color: #cfcfcf;
 }
 
-.submit {
-  margin-top: 40px;
+.signin {
+  margin-top: 45px;
   margin-bottom: 20px;
   background: #9acd32;
   text-transform: uppercase;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+  height: 36px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
 }
 
+.signup{
+  margin-top: 45px;
+  margin-bottom: 20px;
+  background: #9acd32;
+  text-transform: uppercase;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+  height: 36px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
 .fb-btn {
   border: 2px solid #d3dae9;
   color: #8fa1c7;
