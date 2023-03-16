@@ -16,14 +16,14 @@
     <h2>Login</h2>
     <label>
       <span>Email</span>
-      <input type="email" id="signInmail"/>
+      <input type="email" id="signInmail" required/>
     </label>
     <label>
       <span>Password</span>
-      <input type="password" id="signInpass" />
+      <input type="password" id="signInpass" required/>
     </label>
     <p class="forgot-pass">Forgot password?</p>
-    <button type="button" class="submit" id="signIn">Sign In</button>
+    <input type="button" id="signIn" value="Sign In">
   </div>
   <div class="sub-cont">
     <div class="img">
@@ -67,12 +67,13 @@
         <span>Password</span>
         <input type="password" id="signUppass"/>
       </label>
-      <button type="button" class="submit" id="signUp">Sign Up</button>
+      <input type="button" id="signUp" value="Sign Up">
     </div>
   </div>
 </div>
+
 <script src="index.js"></script>
-<script src="psql.js"></script>
+<script type=”module” src="firebase.js"></script>
 </body>
 </html>
 
