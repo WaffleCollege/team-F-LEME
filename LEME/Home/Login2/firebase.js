@@ -36,6 +36,7 @@ signUpbotton.addEventListener('click', function() {
   });
 });
 
+
 //ログイン処理
 login.addEventListener('click', function(e) {
   const mailAddress = document.getElementById('signInmail').value;
