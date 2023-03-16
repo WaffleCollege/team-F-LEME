@@ -823,6 +823,12 @@ option:hover{
 iframe{
   border: none;
 }
+#kensaku2{
+  display: none;
+}
+#search-logo2{
+  display: none;
+}
 @media(min-width:751px){
   .sp{
       display: none !important;
