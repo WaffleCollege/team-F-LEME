@@ -93,3 +93,9 @@ const handleFileSelect = () => {
   }
 }
 fileInput.addEventListener('change', handleFileSelect);
+
+const ninja = document.getElementById("ninjabutton");
+
+ninja.addEventListener("click", function(){
+  console.log("aaaaa");
+});
