@@ -1,1 +1,0 @@
-alert("Javascript読み込めました");
