@@ -328,7 +328,6 @@ border-radius:5px;
   top: 190px;
   left: 518px;
   position: absolute;
-  /* background-color: lightgray; */
 }
 
 .upload-label {
@@ -824,6 +823,12 @@ option:hover{
 iframe{
   border: none;
 }
+#kensaku2{
+  display: none;
+}
+#search-logo2{
+  display: none;
+}
 @media(min-width:751px){
   .sp{
       display: none !important;
@@ -833,4 +838,12 @@ iframe{
   .pc{
       display: none !important;
   }
+}
+
+.ninjabtn{
+  text-align: right;
+}
+
+.ninjabtn button{
+  padding-top: 100px;
 }
