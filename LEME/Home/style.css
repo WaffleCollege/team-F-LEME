@@ -665,7 +665,7 @@ position:absolute;
   font-size: 25px;
   left: 37px;
   top: 22px;
-  width: 220px;
+  width: 270px;
   height: 21px;
   position: absolute;
   line-height: auto;
@@ -833,4 +833,8 @@ iframe{
   .pc{
       display: none !important;
   }
+}
+
+.mokuhyou {
+  width: 400px;
 }
