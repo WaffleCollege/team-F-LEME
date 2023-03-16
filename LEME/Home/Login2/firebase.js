@@ -36,6 +36,7 @@ signUpbotton.addEventListener('click', function() {
   });
 });
 
+//変更点
 
 //ログイン処理
 login.addEventListener('click', function(e) {
