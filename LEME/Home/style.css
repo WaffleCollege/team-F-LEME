@@ -840,3 +840,11 @@ iframe{
       display: none !important;
   }
 }
+
+.ninjabtn{
+  text-align: right;
+}
+
+.ninjabtn button{
+  padding-top: 100px;
+}
