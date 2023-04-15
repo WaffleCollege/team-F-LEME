@@ -289,7 +289,7 @@ border-radius: 50%;
   height: 335px;
   width: 701px;
   padding: 0px;
-  left: 153px;
+  left: 50px;
   top: 90px;
   position: absolute;
 }
@@ -302,7 +302,7 @@ border-radius: 50%;
 .todayframe
 {
 background-color:#ffffff;
-height: 335px;
+height: 650px;
 width: 701px;
 filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
 border-radius:5px;
@@ -312,7 +312,7 @@ border-radius:5px;
 {
   background-color: #ffffff;
   height: 170px;
-  width: 476px;
+  width: 660px;
   left: 27px;
   top: 145px;
   border-radius: 5px;
@@ -325,8 +325,8 @@ border-radius:5px;
   height: 135px;
   width: 168px;
   border-radius: 5px;
-  top: 190px;
-  left: 518px;
+  top: 350px;
+  left: 27px;
   position: absolute;
 }
 
@@ -357,8 +357,8 @@ border-radius:5px;
   text-align: left;
   vertical-align: text-top;
   font-size: 18px;
-  left: 537px;
-  top: 198px;
+  top: 380px;
+  left: 50px;
   width: 57px;
   height: 23px;
   margin-bottom: 35px;
@@ -375,7 +375,7 @@ table{
 .kibun textarea{
   position: relative;
   display: block;
-  width: 440px;
+  width: 630px;
   height: 140px;
   padding: 15px;
   border: none;
@@ -476,7 +476,7 @@ color:#113320;
 text-align:left;
 vertical-align:text-top;
 font-size:18px;
-left:520px;
+left:300px;
 top:40px;
 width:90px;
 height:22px;
@@ -568,8 +568,8 @@ position:absolute;
   text-align: center;
   overflow: hidden;
   padding: 0 20px;
-  top: 340px;
-  left: 586px;
+  top: 40px;
+  left: 550px;
   position: absolute;
   font-size: 15px;
 }
@@ -582,18 +582,18 @@ position:absolute;
 .past
 {
   background-color: #ffffff;
-  height: 280px;
+  height: 240px;
   width: 701px;
   padding: 0px;
-  top: 470px;
-  left: 153px;
+  top: 90px;
+  left: 790px;
   position: absolute;
 }
 
 .pastframe
 {
   background-color: #ffffff;
-  height: 280px;
+  height: 240px;
   width: 701px;
   filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
   border-radius: 5px;
@@ -607,13 +607,13 @@ position:absolute;
   width: 476px;
   border-radius: 5px;
   border: 0.2px solid #000000;
-  top: 91px;
+  top: 60px;
   left: 27px;
   position: absolute;
   margin-top: 10px;
 }
 
-.本文3
+.pastdiary
 {
   overflow: auto;
   color: #113320;
@@ -621,7 +621,7 @@ position:absolute;
   vertical-align: text-top;
   font-size: 18px;
   left: 56px;
-  top: 114px;
+  top: 75px;
   width: 415px;
   height: 130px;
   position: absolute;
@@ -636,7 +636,7 @@ position:absolute;
   height: 150px;
   width: 168px;
   border-radius: 5px;
-  top: 50px;
+  top: 35px;
   left: 259px;
   position: absolute;
 }
@@ -679,8 +679,8 @@ position:absolute;
   text-align: left;
   vertical-align: text-top;
   font-size: 18px;
-  left: 518px;
-  top: 51px;
+  left: 350px;
+  top: 31px;
   width: 116px;
   height: 23px;
   position: absolute;
@@ -823,6 +823,10 @@ option:hover{
 
 iframe{
   border: none;
+    width: 715px;
+    height: 425px;
+    margin-top: 320px;
+    margin-left: 782px;
 }
 #kensaku2{
   display: none;
