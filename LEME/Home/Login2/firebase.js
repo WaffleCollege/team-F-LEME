@@ -18,23 +18,106 @@ const app = initializeApp(firebaseConfig);
 
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
+
+//新規登録　sign in
+
 const auth = getAuth();
-firebase.initializeApp(config);
+const email = document.getElementById("signUpmail");
+const password = document.getElementById("signUppass");
 
-export { getAuth };
+createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in
+    const user = userCredential.user;
 
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });
 
 //新規登録処理
-function signInClick(){
-  alert('signInされました。');
-}
-function signUpClick(){
-  document.getElementById("signIn").click();
-}
-const botan = document.getElementById("signUp");
-botan.addEventListener("click", () => {
-  alert ("yei");
+const signUpbotton = document.getElementById('signUp');
+signUpbotton.addEventListener('click', function() {
+  const mailAddress = document.getElementById('signUpmail').value;
+  const password = document.getElementById('signInpass').value;
+
+  firebase.auth().createUserWithEmailAndPassword(mailAddress, password)
+  console.log("nice")
+  .catch(function(error) {
+    alert('登録できません（' + error.message + '）');
+  });
 });
+
+//変更点
+
+//ログイン処理
+login.addEventListener('click', function(e) {
+  const mailAddress = document.getElementById('signInmail').value;
+  const password = document.getElementById('signUppass').value;
+  
+  firebase.auth().signInWithEmailAndPassword(mailAddress, password)
+  .catch(function(error) {
+    alert('ログインできません（' + error.message + '）');
+  });
+});
+
+//認証状態の確認
+firebase.auth().onAuthStateChanged(function(user) {
+  if(user) {
+    //ログイン状態
+    alert("ログインに成功しました");
+  }else{
+    //ログアウト状態
+  }
+});
+
+// // Initialize Firebase
+// const firebaseapp = initializeApp(firebaseConfig);
+
+// import { getAuth, createUserWithEmailAndPassword } from "/firebase/compat/auth";
+
+// const auth = getAuth(firebaseapp);
+
+// //サインアップに必要な変数
+
+// const sEmail = document.getElementById("signUpmail").value;
+// const sPassword = document.getElementById("signUppass").value;
+// const sBtn = document.getElementById("signUp");
+
+// //サインアップコード
+// function signup(){
+//   createUserWithEmailAndPassword(auth, sEmail, sPassword)
+//   .then((userCredential) => {
+    
+//     const user = userCredential.user;
+//     window.location.replace('index.html');
+                
+//     })
+//   .catch((error) => {
+//     const errorCode = error.code;
+//     const errorMessage = error.message;
+                
+//   });
+// };
+
+// //サインアップのボタンが押されたら、サインアップする
+// sBtn.addEventListener("click", signup);
+
+
+// //新規登録処理
+// function signInClick(){
+//   alert('signInされました。');
+// }
+// function signUpClick(){
+//   document.getElementById("signIn").click();
+// }
+// const botan = document.getElementById("signUp");
+// botan.addEventListener("click", () => {
+//   alert ("yei");
+// });
 
 // const signUpbotton = document.getElementById('signUp');
 // signUpbotton.addEventListener('click', console.log("hello")); {
