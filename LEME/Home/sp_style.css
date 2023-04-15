@@ -225,3 +225,7 @@ outline:none;
     color: #113320;
     outline: none;
   }
+
+  p{
+    width: 350px;
+  }

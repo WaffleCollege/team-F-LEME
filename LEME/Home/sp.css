@@ -204,9 +204,11 @@ button {
     position: absolute;
     left: 27px;
     top: 92px;
+    height: 38px;
 }
 table {
   border: none;
+  height: 38px;
 }
     .date
     {
@@ -240,12 +242,12 @@ table {
       font-size:13px;
     }
     .btn{
-    left: 245px;
-    top: 290px;
+    left: 290px;
+    top: 23px;
     background: #ffff00;
     color: #000000;
-    width: 115px;
-    height: 34px;
+    width: 85px;
+    height: 28px;
     border-radius: 20px;
     text-align: center;
     overflow: hidden;
@@ -283,9 +285,12 @@ table {
       position: absolute;
       margin-top: 10px;
   }
-    .本文３{
-    left: 56px;
-    top: 100px;
+    .pastdiary{
+      font-size: 13px;
+      left: 38px;
+      top: 100px;
+      width: 165px;
+      height: 100px;
   }
     .tag
     {
@@ -337,13 +342,15 @@ table {
       border: none;
       font-size: 20px;
   }
+  .firstbox{
+    height: 38px;
+  }
     .pastimage
     {
-    width: 30%;
+    width: fit-content;
     height: 110px;
-    top: 89px;
-    left: 225px;
-    background-color: rgba(217, 217, 217, 0.8);
+    top: 45px;
+    left: 105px;
     border-radius: 5px;
     position: absolute;
     }
@@ -372,7 +379,7 @@ table {
       line-height: 1.4;
       background-color: white;
       color: gray;
-      font-size: 1em;
+      font-size: 14px;
       border-radius: 30px;
       transition: 0.2s;
   }
@@ -383,8 +390,8 @@ table {
     height: 135px;
     width: 135px;
     border-radius: 5px;
-    left: 220px;
-    top: 125px;
+    left: 270px;
+    top: 130px;
     position: absolute;
     background-color: rgba(0, 0, 0, 0);
 }
