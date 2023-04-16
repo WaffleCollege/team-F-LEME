@@ -72,6 +72,10 @@
         <div class="content">
         <!-- 日記入力日 -->
         <div id='today' class='today'>
+            <!--<button class="startvoice" id="start-btn">start</button>
+            <button class="stopvoice" id="stop-btn">stop</button>
+            <div id="result-div"></div>
+            <small id="status"></small>-->
          <div id='todayframe' class='todayframe'>
          </div>
         
@@ -86,14 +90,14 @@
          <div id='todayimage' class='todayimage'>
             <label class="upload-label">
                 select image
-                <input type="file" accept="image/*" id="example">
+                <input type="file" accept="image/*" id="example" multiple>
             </label>
             
          </div>
         
          <div id='image' class='image'>
             <!-- 👇ここにプレビュー画像を追加する -->
-            <div id="preview"></div>
+            <div id="preview" style="display: flex;"></div>
         </div>
 
         <div id='keepbtn' class='keepbtn'>
@@ -120,27 +124,28 @@
             
             <!-- 表示非表示切り替え -->
             <tr id="firstBox">
-            <td><textarea placeholder="今日何かいいことあった？"></textarea></td>
+            <td><textarea id="show_progress"  placeholder="今日何かいいことあった？"></textarea></td>
             </tr>
              
             <!-- 表示非表示切り替え -->
             <tr id="secondBox">
-            <td><textarea placeholder="今日何したの？"></textarea></td>
+            <td><textarea id="show_progress"  placeholder="今日何したの？"></textarea></td>
             </tr>
             
             <!-- 表示非表示切り替え -->
             <tr id="thirdBox">
-              <td><textarea placeholder="今日どうだった？"></textarea></td>
+              <td><textarea id="show_progress"  placeholder="今日どうだった？"></textarea></td>
               </tr>
             
               <!-- 表示非表示切り替え -->
             <tr id="fourthBox">
-              <td><textarea placeholder="今日どこかいった？"></textarea></td>
+              <td><textarea id="show_progress"  placeholder="今日どこかいった？"></textarea></td>
               </tr>
             </table>
             </form>
              </div>
-
+             <div id="show_result"></div>
+             
         <div class='weather'>
             <input type="radio" name="weather" value="hare" id="radio_5"><label for="radio_5">🌞</label>
             <input type="radio" name="weather" value="kumori" id="radio_6"><label for="radio_6">⛅</label>

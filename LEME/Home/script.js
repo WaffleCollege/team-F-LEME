@@ -85,6 +85,7 @@ function previewFile(file) {
 
 
 // <input>でファイルが選択されたときの処理
+//file.lengthを数字に変えることで１回で選択できる個数を制限できるが、２回目以降の選択で同じ量追加が可能
 const fileInput = document.getElementById('example');
 const handleFileSelect = () => {
   const files = fileInput.files;
